@@ -4,3 +4,9 @@
 ## Today is the first day of the mid-term Project!
 
 ## I will be adding here a detailed log of everyday until final delivery:
+
+
+###22 November2022 :
+
+## Main HTML page almost completed + CSS Style 
+
