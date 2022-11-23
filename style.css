@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 * {
     box-sizing: border-box;
+    line-height: 20px;
 }
+
 body {
     background-color: #f2f4fc;;
     font-family: 'Roboto', sans-serif;
@@ -192,7 +194,7 @@ display: inline-block;
     align-items: center;
 }
 
-----------------FOURTH PART----------------
+----------------PROJECT PART----------------
 
 #section {
     margin-top: 200px;
@@ -553,8 +555,8 @@ display: inline-block;
         margin-right: auto;
         margin-left: auto ;
       }
-
-      .section.cta-section {
+-----------------CTA SECTION-----------------------
+      .cta-section {
         width: 1320px;
         height: 500px;
         max-width: 1320px;
@@ -617,10 +619,99 @@ display: inline-block;
         background-color: #ecf7ff;
         color: #292e47;
     }
-
-   
+    #CTASection {
+        background-color: #ffc600;
+        width: 1320px;
+        height: 500px;
+        margin-top: 200px;
+    }
     
-    .section.footer {
+    #CTASection h1{
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    
+    #CTASection p{
+        font-size: 17px;
+        color: #6b708d;
+        margin-bottom: 0;
+    }
+    
+    #CTASection .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .email{
+        height: 80px;
+        width: 600px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #CTASection form{
+        margin-right: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .emailIcon{
+        width: 30px;
+        height: 30px;
+        background-image: url("./imgs/newsletter/icon/mail.svg");
+        position: absolute;
+        left: 8%;
+        top: 27%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    
+    .input{
+        width: 393px;
+        height: 80px;
+        margin-bottom: 0px;
+        padding-left: 70px;
+        background-color: #ecf7ff;
+        color: #292e47;
+        font-size: 14px;
+        border: 1px solid #cccccc;
+    }
+    
+    .subs{
+        width: 198px;
+        height: 80px;
+        font-size: 17px;
+        line-height: 130%;
+        background: #072AC8;
+        color: white;
+        border: none;
+        padding-right: 60px;
+        padding-left: 60px;
+        cursor: pointer;
+    }
+    .subs:hover{
+        background-color: #292e47;
+    }
+    
+    .form-done{
+        display: none;
+        padding: 20px;
+        text-align: center;
+        background-color: #dddddd;
+    }
+    .form-fail{
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #ffdede;
+    }
+
+   ----------------FOOTER SECTION----------------
+    
+    .section-footer {
         margin-top: 200px;
         padding-bottom: 100px;
     }
