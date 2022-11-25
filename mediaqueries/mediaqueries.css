@@ -1,17 +1,12 @@
-/* Media Queries */
-/* DESKTOP */
+
 
 @media only screen and (min-width: 1200px) 
 {
     #burger-menu-img {
         display: none;
     }
-    #hero-buttons-tablet-phone {
-        display: none;
-    }
-    #logos-section-phone {
-        display: none;
-    }
+   
+    
 }
          /*SMALL DESKTOP*/
 
@@ -22,13 +17,7 @@
     }
     
     /* HERO */
-    .section-hero {
-        width: 95%;
-    }
-
-    #hero-buttons-tablet-phone {
-        display: none;
-    }
+   
     /* LOGOS */
 
     #logos-section-phone {
