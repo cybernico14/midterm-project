@@ -460,6 +460,14 @@ display: inline-block;
 
 /* -----------------SERVICES SECTION------------------ */
 
+.section-services {
+    margin-top: 200px;
+    padding: 0px 30px;
+    background-color: #f2f4fc;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
     .projects-heading {
         color: #292e47;
@@ -469,17 +477,18 @@ display: inline-block;
     }
 
     .services-grid{
-        display: grid;
+    display: grid;
     margin-top: 70px;
     grid-auto-columns: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 16px;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     }
     .service-card {
         display: flex;
         max-width: 340px;
+        flex-wrap: wrap;
         
         
         flex-direction: column;
@@ -515,14 +524,9 @@ display: inline-block;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
+            
             flex-direction: column;
-            -webkit-box-pack: justify;
-            -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
+            
             justify-content: space-between;
         }
         .form-block {
@@ -565,14 +569,7 @@ display: inline-block;
             
         }
 
-      .section-services {
-        margin-top: 200px;
-        padding: 0px 30px;
-        background-color: #f2f4fc;
-        width: 80vw;
-        margin-left: auto;
-        margin-right: auto;
-      }
+      
 
       
 /* -----------------CTA SECTION----------------------- */
