@@ -1,0 +1,362 @@
+/* Media Queries */
+/* DESKTOP */
+
+@media only screen and (min-width: 1200px) 
+{
+    #burger-menu-img {
+        display: none;
+    }
+    #hero-buttons-tablet-phone {
+        display: none;
+    }
+    #logos-section-phone {
+        display: none;
+    }
+}
+         /*SMALL DESKTOP*/
+
+@media only screen and (max-width:1199px) and (min-width:992px) { 
+
+    #burger-menu-img {
+        display: none;
+    }
+    
+    /* HERO */
+    .section-hero {
+        width: 95%;
+    }
+
+    #hero-buttons-tablet-phone {
+        display: none;
+    }
+    /* LOGOS */
+
+    #logos-section-phone {
+        display: none;
+    }
+
+    /* PROJECTS */
+
+    #project-section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 0 8vh 0;
+    }
+    /* SERVICES */
+
+    #services-section {
+        width: 90%;
+    }
+    /* CTA */
+    
+    #cta-section {
+        width: 100%;
+    }
+    
+    footer {
+        width: 90%;
+    }
+}
+
+/* TABLET*/ 
+ @media only screen and (max-width:991px) 
+{ 
+    /* HEADER */
+    header {
+        margin: 2vh 0 4vh 0;
+        width: 95%;
+    }
+    .main-nav {
+        display: none;
+    }
+    #header-cta {
+        display: none;
+    }
+
+
+    /* HERO */
+	.section-hero {
+        padding-top: 0px;
+    }
+   
+    #hero-container {flex-direction: column;}
+
+    #hero-content {
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    #hero-content {
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    #hero-content h1 {
+        text-align: center;
+    } 
+
+#circle {
+    max-width: 600px;
+    text-align: center;
+}    
+.hero-buttons {
+   
+    display: flex;
+    
+    flex-direction: row-reverse;
+   
+    justify-content: flex-start;
+    
+    align-items: center;
+}
+
+.hero-image {
+    margin-top: 40px;
+}
+
+    /* COMPANIES */
+
+.grid-logos {
+    justify-items: center;
+    
+    align-items: center;
+    grid-column-gap: 50px;
+    
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-rows: auto auto;
+}
+
+    
+    #amazon-logo {
+        display: none;
+    }
+
+    /* PROJECTS */
+    #project-section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 40px 0 0;
+        padding: 0px 30px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        margin: 5vh 0 0 0;
+    }
+    .project-content {
+        width: 700px;
+        margin: 3vh 4vh 0 0;
+        flex-wrap: wrap;
+    }
+
+    .card-image img {
+        width: 700px;
+    height: 260px;}
+    /* TESTIMONIALS */
+    #testimonials-section {
+        width: 100%;
+    }
+     /* SERVICES */
+     #services-section {
+        width: 90%;
+    }
+    /* CTA */
+    #cta-section {
+        width: 100%;
+    }
+    footer {
+        width: 90%;
+    }
+} 
+
+/* PHONE */
+@media only screen and (max-width: 767px)  {
+    /* HEADER */
+    header {
+        margin: 2vh 0 4vh 0;
+        width: 95%;
+    }
+    header nav {
+        display: none;
+    }
+    #header-cta {
+        display: none;
+    }
+
+
+    .section-hero {
+        padding-top: 0px;
+
+    }
+
+#hero-container {
+    flex-direction: column;
+}
+#hero-content {
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+#hero-content h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#circle {
+    font-size: 17px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+    
+
+.hero-image {
+    margin-top: 40px;
+}
+    .hero-card-1 {display: none;}
+.hero-card-2 {display: none;}
+
+    /* COMPANIES */
+    #logos-section {
+        display: none;
+    }
+    #logos-section-phone {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10vh 0 10vh 0;
+    }
+    .logos-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 7vh;
+    }
+    #amazon-logo {
+        display: none;
+    }
+    /* PROJECTS */
+
+    #project-section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 40px 0 0;
+        padding: 0px 30px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        margin: 5vh 0 0 0;
+    }
+    .project-content {
+        width: 80%;
+        margin: 3vh 4vh 0 0;
+        flex-wrap: wrap;
+    }
+
+    .card-image img {
+        width: 80%;
+    height: 260px;}
+
+    /* TESTIMONIALS */
+
+    .section-testimonials {
+        width: 90%;
+        margin: 40px 0 0;
+        height: 450px;
+        margin-top: 60px;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+    }
+    #emoji {
+        display: none;
+    }
+     /* SERVICES */
+     #section-services {
+        width: 90%;
+        
+    }
+    .services-grid {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .service-card {
+        max-width: 100%;
+    }
+    .service-item {
+        width: 100%;
+        height: 40vh;
+        margin: 4vh 0 0 0;
+    }
+    .service-icon {
+        padding: 20px;
+        margin: 4vh 0 0 4vh;
+    }
+    /* CTA */
+    #CTASection {
+        width: 100%;
+    }
+
+    .container {max-width: 100%;}
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .email {
+        flex-direction: column;
+    }
+
+    .email form {
+        flex-direction: column;
+    }
+
+   .subs {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+   } 
+    /* FOOTER */
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        align-items: center;
+    }
+    .footer-content-address {
+        text-align: center;
+    }
+    .footer-links {
+        margin-top: 20px;
+    }
+}
+
