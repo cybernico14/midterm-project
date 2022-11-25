@@ -163,18 +163,33 @@
     .card-image img {
         width: 700px;
     height: 260px;}
+
     /* TESTIMONIALS */
-    #testimonials-section {
+
+    .section-testimonials {
         width: 100%;
+        height: 500px;
+    margin-top: 60px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     }
+
+    .testimonial-heading {
+        max-width: 400px;
+        margin-bottom: 0px;
+        line-height: 150%;
+    }
+
+    #emoji {
+        width: 100px;
+    height: 100px;
+    }
+
      /* SERVICES */
-     #services-section {
-        width: 90%;
-    }
+     
     /* CTA */
-    #cta-section {
-        width: 100%;
-    }
+    
     footer {
         width: 90%;
     }
@@ -285,15 +300,28 @@
 
     /* TESTIMONIALS */
 
+    @media screen and (max-width: 479px){
+    .testimonial-heading {
+        font-size: 30px;
+    }
+}
+
     .section-testimonials {
-        width: 90%;
-        margin: 40px 0 0;
-        height: 450px;
-        margin-top: 60px;
-    background-position: 50% 50%;
-    background-size: cover;
+        height :450px;
     
     }
+
+.testimnonials-box {
+    height:100%;
+    justify-content: space-around;
+}
+
+.testimonials-heading {
+    max-width:400px;
+    margin-bottom: 0px;
+    line-height: 150%;
+}
+
     #emoji {
         display: none;
     }
@@ -320,31 +348,44 @@
         margin: 4vh 0 0 4vh;
     }
     /* CTA */
-    #CTASection {
-        width: 100%;
-    }
+    @media screen and (max-width: 991px){
 
-    .container {max-width: 100%;}
+        .section.cta-section{display: flex;
+        max-width: 100%;
+    margin-top: 60px;
+flex-direction: row;}
+        .button.primary-button.cta-button {
+            display: block;
+        }}
 
-    .container h1 {
-        font-size: 30px;
-    }
+    @media screen and (max-width: 767px){
+        
+        .cta-section {
+            width: 100%;
+        }
+        .container-cta {
+            max-width: 100%;
+        }
+        .form-block {
+            flex-direction: column;
+        }
+.cta-form {
+    
+    flex-direction: column;
 
-    .email {
-        flex-direction: column;
-    }
-
-    .email form {
-        flex-direction: column;
-    }
-
-   .subs {
+}
+.button.primary-button.cta-button {
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
     margin-left: 0px;
-   } 
+}
+}
+
+
     /* FOOTER */
+
+
     .container-footer {
         flex-direction: column;
         align-items: center;
@@ -360,3 +401,18 @@
     }
 }
 
+@media screen and (max-width: 991px){
+.section.footer {
+    margin-top: 60px;
+}}
+@media screen and (max-width: 767px){
+.container.footer {
+    
+    align-items: center;
+}
+.footer-content {
+    align-items: center;
+}
+.footer-links {
+margin-top: 20px;
+}}

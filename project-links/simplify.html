@@ -5,13 +5,36 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/navbar/navbar.css" />
+
   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="../mediaqueries/mediaqueries.css">
   <title>Document</title>
 </head>
 
 <body>
-  <nav id="navbar"></nav>
+  <section id="nav">
+
+    <div class="container">
+      <img src="/imgs/circle.svg" alt="Circle Logo" />
+      <div class="nav-menu">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="#section">Projects</a>
+        <a class="nav-link" href="#section-services">Services</a>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <button onclick="location.href='/contact-us/contact-us.html'">
+        Contact Us
+      </button>
+    </div>
+
+
+  </section>
 
   <div id="main-section-link">
     <h1 id="main-section-heading">Simplify</h1>
@@ -50,12 +73,12 @@
 
   <div id="section">
     <div class="project-container">
-      <h2 class="projects-heading">Recent Projects</h2>
+      <h2 class="projects-heading">Other Projects</h2>
       <div class="div-wrapper">
         <div role="list" class="grid-container">
           <div class="project-card">
             <div class="card-image">
-              <img src="/imgs/projects-section/4.jpg" alt="simplify" />
+              <img src="/imgs/projects-section/2.jpg" alt="simplify" />
             </div>
             <div class="project-content">
               <div class="project-text">
@@ -70,7 +93,7 @@
 
           <div class="project-card">
             <div class="card-image">
-              <img src="/imgs/projects-section/5.jpg" alt="dashcoin" />
+              <img src="/imgs/projects-section/3.jpg" alt="dashcoin" />
             </div>
             <div class="project-content">
               <div class="project-text">
@@ -82,7 +105,7 @@
           </div>
           <div class="project-card">
             <div class="card-image">
-              <img src="/imgs/projects-section/6.jpg" alt="vectorify" />
+              <img src="/imgs/projects-section/4.jpg" alt="vectorify" />
             </div>
             <div class="project-content">
               <div class="project-text">
@@ -96,51 +119,60 @@
       </div>
     </div>
   </div>
+  `
 
+  <div class="cta-section">
+    <div class="container-cta">
+      <h1 class="cta-heading">Do you have any questions?</h1>
+      <div class="cta-subtitle">
+        Let us help you!
+      </div>
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="cta-form"
+          aria-label="Email Form">
+          <div class="cta-textfield-wrapper">
 
-  <section id="CTASection">
-    <div class="container">
-      <h1>Do you have any questions?</h1>
-      <p>Let us help you!</p>
-      <div class="email">
-        <form>
-          <div class="emailIcon"></div>
-          <input type="email" class="input" maxlength="250" name="email" placeholder="Enter your email" required />
+            <div class="textfield-icon">
+
+            </div>
+
+            <input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2"
+              placeholder="Enter your email" id="email-2" required="">
+          </div>
+          <input type="submit" value="Subscribe" data-wait="Please wait..."
+            class="button primary-button cta-button w-button">
         </form>
-        <input type="submit" value="Subscribe" class="subs" />
-        <div class="form-done" tabindex="-1" role="region" aria-label="Email Form success">
-          <div>Thank you! Your submission has been received!</div>
+        <div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+          <div>Thank you! Your submission has been received!
+
+          </div>
         </div>
-        <div class="form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+        <div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
           <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 
-  <div class="container-footer">
-    <div class="footer-content">
-      <div class="footer-content-logo"></div>
-      <div class="footer-content-address">
-        2972 Westheimer Rd. Santa Ana, Illinois 85486
+    <div class="container-footer">
+      <div class="footer-content">
+        <div class="footer-content-logo"></div>
+        <div class="footer-content-address">
+          2972 Westheimer Rd. Santa Ana, Illinois 85486
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Team</a><a href="#" class="footer-link">Services</a><a href="#"
+          class="footer-link">About Us</a><a href="#" class="footer-link">Press</a><a href="#"
+          class="footer-link">Projects</a><a href="#" class="footer-link">Privacy Policy</a>
       </div>
     </div>
-    <div class="footer-links">
-      <a href="#" class="footer-link">Team</a><a href="#" class="footer-link">Services</a><a href="#"
-        class="footer-link">About Us</a><a href="#" class="footer-link">Press</a><a href="#"
-        class="footer-link">Projects</a><a href="#" class="footer-link">Privacy Policy</a>
-    </div>
-  </div>
 
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <script>
-    $.get("/navbar/navbar.html", function (data) {
-      $("#navbar").replaceWith(data);
-    });
-  </script>
 
-  <script src="/index.js"></script>
+
+
+    <script src="/index.js"></script>
+    <script src="/navbar/menuHamburger.js"></script>
 </body>
 
 </html>
